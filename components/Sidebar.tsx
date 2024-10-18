@@ -29,7 +29,7 @@ const Sidebar = ({ user }: SidebarProps) => {
           <h1 className="sidebar-logo">Horizon</h1>
         </Link>
 
-        {/* Declare isActive inside the map function's body */}
+
         {sidebarLinks.map((item) => {
           const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`);
 
@@ -55,7 +55,11 @@ const Sidebar = ({ user }: SidebarProps) => {
             </Link>
           );
         })}
+
+        USER
       </nav>
+      
+       FOOTER
     </section>
   );
 };
